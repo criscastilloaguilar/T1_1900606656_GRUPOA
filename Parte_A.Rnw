@@ -1,0 +1,71 @@
+\documentclass[6pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{anysize} 
+\usepackage[spanish]{babel}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{multirow} % para las tablas
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\marginsize{1.50cm}{1.50cm}{1.50cm}{1.50cm} 
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\centering
+\newcommand{\titulo}{ Universidad Nacional de Loja \\ \ \\   Area de Energia, Industrias y Recursos Naturales no Renovables\\ \ \\ Ingenieria en Sistemas  \\ \ \\  \\ \ \\}
+\newcommand{\fecha}{\today}
+
+\pagestyle{empty}
+
+
+
+
+
+
+\raggedright\textbf{Autor:}
+\begin{itemize}
+\item \href{http://www.iralis.org/?q=node%2F10&paso=10&letra=B&id=7323}{ECINF7323}{cristian castillo}
+\end{itemize}
+\raggedright\textbf{Docente:\\}
+\begin{itemize}
+\item \href{http://www.iralis.org/?q=node%2F10&paso=10&letra=O&id=4796}{ECINF4796}
+\end{itemize} 
+
+\flushleft
+
+
+
+
+
+
+
+\textbf {Es aplicable la ingenieria   de software cuando se elaboran webapps Si es asi, como  puede
+modificarse para que asimile las caractersticas unicas  de estas}
+
+\text {no es aplicable poreue als webapps sondiferentes a la ingenieria de software ademas tienen las siguientes caracteristicas
+:}
+uso intensivo de redes: 
+Concurrencia:
+carga impredecible
+rendimiento 
+disponiblidadçorientada a datos
+contenido sensible
+evoluvion continua 
+inmediatez
+
+
+
+
+
+\textbf{2. Un breve descripción del dataset Titanic}
+
+
+"Es un  conjunto de datos proporciona información sobre el destino de los pasajeros en el primer viaje fatal del trasatlántico Titanic , que se resumen de acuerdo a la situación económica (clase ) , el sexo , la edad y la supervivencia.")
+<<results=verbatim,echo=FALSE>>=
+print(Titanic)
+@
+sum(titanic)
+
+\end{document}
